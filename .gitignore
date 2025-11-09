@@ -1,0 +1,62 @@
+# ======================
+# Python build artifacts
+# ======================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ======================
+# Virtual environments
+# ======================
+.venv/
+env/
+venv/
+
+# ======================
+# Local data & outputs
+# ======================
+output/
+database/
+logs/
+*.db
+*.sqlite
+*.jsonl
+*.csv
+*.xlsx
+
+# ======================
+# Model / cache files
+# ======================
+*.bin
+*.gguf
+*.pt
+*.safetensors
+*.ckpt
+.cache/
+ollama_models/
+models/
+checkpoints/
+
+# ======================
+# IDE & OS clutter
+# ======================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.tmp
+
+# ======================
+# Streamlit & Chroma cache
+# ======================
+.streamlit/
+chroma/
+chroma_db/
+chroma_index/
+
+# ======================
+# Notebooks temp files
+# ======================
+.ipynb_checkpoints/
