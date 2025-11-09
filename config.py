@@ -6,7 +6,9 @@ load_dotenv()  # reads .env file
 
 # ---- PATHS ----
 # root folder where your current "by-topic" materials live
-ROOT_MATERIALS_DIR = os.getenv("AI_LIB_PATH", "./AI Product Manager") # <-- change the root path in .env
+base = os.getenv("AI_LIB_PATH", ".")
+ROOT_MATERIALS_DIR = os.path.join(base, "AI Product Manager") # <-- change the root path in .env
+print(ROOT_MATERIALS_DIR)
 
 # where we store processed stuff (summaries, vector db, cache)
 OUTPUT_DIR = "./output"
@@ -40,5 +42,5 @@ ALLOWED_EXTENSIONS = SUPPORTED_DOC_EXT + SUPPORTED_CODE_EXT
 
 # speed controls
 FAST_MODE = True  # if True, we embed the raw text chunk (no LLM call) -> MUCH faster
-MAX_FILES = 20     # 0 = no limit; or set 200 to only process first 200 files
+# MAX_FILES = 50     # 0 = no limit; or set 200 to only process first 200 files
 EXCLUDE_DIR_KEYWORDS = ["node_modules", ".git", ".venv", "__pycache__", "data", "images"]

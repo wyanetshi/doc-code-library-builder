@@ -4,3 +4,4 @@ sentence-transformers
 pypdf2
 tqdm
 requests
+dotenv
