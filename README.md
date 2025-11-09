@@ -1,6 +1,6 @@
 # 🧠 AI Library Builder & Search
 
-This project converts a folder of **AI learning materials** (PDFs, Python scripts, and notebooks) into a **local searchable knowledge base**.  
+This project converts a folder of PDFs, txts, Python scripts, and notebooks into a **local searchable knowledge base**.  
 It automatically scans, summarises, and indexes your files using your local large language models (LLMs), and provides a **Streamlit web interface** for searching and exploring them.
 
 ---

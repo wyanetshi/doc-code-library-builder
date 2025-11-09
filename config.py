@@ -36,3 +36,9 @@ CODE_CHUNK_OVERLAP = 50
 # ---- MISC ----
 SUPPORTED_DOC_EXT = [".pdf", ".txt"]
 SUPPORTED_CODE_EXT = [".py", ".ipynb"]
+ALLOWED_EXTENSIONS = SUPPORTED_DOC_EXT + SUPPORTED_CODE_EXT
+
+# speed controls
+FAST_MODE = True  # if True, we embed the raw text chunk (no LLM call) -> MUCH faster
+MAX_FILES = 20     # 0 = no limit; or set 200 to only process first 200 files
+EXCLUDE_DIR_KEYWORDS = ["node_modules", ".git", ".venv", "__pycache__", "data", "images"]
